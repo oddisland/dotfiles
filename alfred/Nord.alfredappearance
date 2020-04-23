@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 9,
+      "subtext" : {
+        "size" : 8,
+        "colorSelected" : "#D7DDE9FF",
+        "font" : "Source Code Pro for Powerline",
+        "color" : "#7FA0C2FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Avenir",
+        "color" : "#7FA0C2FF"
+      },
+      "backgroundSelected" : "#4B556AFF",
+      "text" : {
+        "size" : 13,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "Source Code Pro for Powerline",
+        "color" : "#D7DDE9FF"
+      },
+      "iconPaddingHorizontal" : 12,
+      "paddingVertical" : 3,
+      "iconSize" : 38
+    },
+    "search" : {
+      "paddingVertical" : 5,
+      "background" : "#333B47FF",
+      "spacing" : 0,
+      "text" : {
+        "size" : 23,
+        "colorSelected" : "#000000FF",
+        "font" : "Source Code Pro for Powerline",
+        "color" : "#EBEEF4FF"
+      },
+      "backgroundSelected" : "#B2D7FFFF"
+    },
+    "window" : {
+      "color" : "#343B48FF",
+      "paddingHorizontal" : 0,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 3,
+      "paddingVertical" : 0
+    },
+    "credit" : "Jim Hill",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#7FA0C2FF",
+      "thickness" : 2
+    },
+    "name" : "Nord"
+  }
+}

@@ -1,0 +1,30 @@
+export ZSH="/Users/oddisland/.oh-my-zsh"
+
+ZSH_THEME="spaceship"
+
+HIST_STAMPS='yyyy-mm-dd'
+SPACESHIP_CHAR_SYMBOL='🥬   ➜ '
+
+export PATH="$HOME/.npm-packages/bin:$PATH"
+export PATH="$HOME/.node/bin:$PATH"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+export ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/
+
+autoload -U promptinit; promptinit
+prompt spaceship
+plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/prof
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_i
+
+alias gco='git checkout'
+alias gpo='git push origin'
+alias gs='git status'
+alias glpg='git log --pretty=oneline --graph'
+alias ..='cd ..'
+alias ...='cd ..; cd ..;'
+alias ys='yarn start'
+alias yd='yarn dev'
+alias cat='bat'
