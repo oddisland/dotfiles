@@ -1,24 +1,20 @@
-export ZSH="/Users/oddisland/.oh-my-zsh"
+export ZSH="/Users/bytedance/.oh-my-zsh"
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node
 
 ZSH_THEME="spaceship"
 
-HIST_STAMPS='yyyy-mm-dd'
-SPACESHIP_CHAR_SYMBOL='🥬   ➜ '
+plugins=(git k autojump zsh-autosuggestions zsh-syntax-highlighting)
 
-export PATH="$HOME/.npm-packages/bin:$PATH"
-export PATH="$HOME/.node/bin:$PATH"
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
-export ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/
-
-autoload -U promptinit; promptinit
-prompt spaceship
-plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/prof
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_i
 
+SPACESHIP_CHAR_SYMBOL='🥬 ➜ '
+HIST_STAMP='yyyy-mm-dd'
+
+alias gsl='git shortlog -sne'
+alias l='k'
 alias gco='git checkout'
 alias gpo='git push origin'
 alias gs='git status'
@@ -28,3 +24,5 @@ alias ...='cd ..; cd ..;'
 alias ys='yarn start'
 alias yd='yarn dev'
 alias cat='bat'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias qrcode='qrcode-terminal'
