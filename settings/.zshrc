@@ -13,12 +13,23 @@ source $ZSH/oh-my-zsh.sh
 SPACESHIP_CHAR_SYMBOL='🥬 ➜ '
 HIST_STAMP='yyyy-mm-dd'
 
-alias gsl='git shortlog -sne'
+alias copy='pbcopy <'
+alias paste='pbpaste >'
 alias l='k'
+
+# git alias
+alias gitconfig_personal='git config --global user.name "oddisland" && git config --global user.email "islanddd@icloud.com" && git config -l'
+alias gitconfig_work='git config --global user.name "李帆顺" && git config --global user.email "lifanshun@bytedance.com" && git config -l'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias gd='git diff'
+alias gs='git status'
 alias gco='git checkout'
 alias gpo='git push origin'
-alias gs='git status'
+alias gsl='git shortlog -sne'
 alias glpg='git log --pretty=oneline --graph'
+
 alias ..='cd ..'
 alias ...='cd ..; cd ..;'
 alias ys='yarn start'
@@ -26,3 +37,5 @@ alias yd='yarn dev'
 alias cat='bat'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias qrcode='qrcode-terminal'
+
+
