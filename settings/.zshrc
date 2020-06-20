@@ -15,20 +15,18 @@ HIST_STAMP='yyyy-mm-dd'
 
 alias copy='pbcopy <'
 alias paste='pbpaste >'
-alias l='k'
+alias l='k -a'
 
 # git alias
 alias gitconfig_personal='git config --global user.name "oddisland" && git config --global user.email "islanddd@icloud.com" && git config -l'
 alias gitconfig_work='git config --global user.name "李帆顺" && git config --global user.email "lifanshun@bytedance.com" && git config -l'
-alias ga='git add'
-alias gb='git branch'
-alias gc='git commit'
-alias gd='git diff'
 alias gs='git status'
 alias gco='git checkout'
 alias gpo='git push origin'
 alias gsl='git shortlog -sne'
 alias glpg='git log --pretty=oneline --graph'
+alias lg='lazygit'
+# git cancel commit git reset --soft HEAD^
 
 alias ..='cd ..'
 alias ...='cd ..; cd ..;'
