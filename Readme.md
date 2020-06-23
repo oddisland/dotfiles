@@ -38,6 +38,7 @@
 
 ## 命令行
 
+- **[tig](https://jonas.github.io/tig/)**，text-mode interface，用来 code reivew
 - **[bat](https://github.com/sharkdp/bat)**，带行号的 cat，可以配 `alias cat="bat"`
 - **[fd](https://github.com/sharkdp/fd)**，比系统自带的 find 友好
 - **[fkill-cli](https://github.com/sindresorhus/fkill-cli)**，比 kill 好用的进程 killer
