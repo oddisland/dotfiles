@@ -75,3 +75,4 @@
 - **Stylus**
 - **GitZip**，下载 github 文件
 - **npmhub**，展示 npm 依赖
+-- **[User-Agent Switcher for Chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg)**，快速切换 User-Agent
